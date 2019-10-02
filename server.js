@@ -13,7 +13,7 @@ const helmet = require('helmet');
 const compression = require('compression');
 const cors = require('cors');
 const session = require('express-session');
-const MONGODB_URI = `mongodb://${process.env.MONGO_USER}:1213@cluster0-shard-00-00-z4rkw.mongodb.net:27017,cluster0-shard-00-01-z4rkw.mongodb.net:27017,cluster0-shard-00-02-z4rkw.mongodb.net:27017/work-time?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const MONGODB_URI = `mongodb://localhost:27017/test'`;
 
 const MongoDBStore = require('connect-mongodb-session')(session);
 
