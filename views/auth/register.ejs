@@ -1,0 +1,40 @@
+<%- include('../includes/head.ejs') %>
+
+<link rel="stylesheet" href="/css/auth.css">
+</head>
+
+<body>
+  <%- include('../includes/navigation.ejs') %>
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>הרשמה</h1>
+    </div>
+    <div class="col-12">
+      <form action="/register" method="POST" class="auth-form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">שם</label>
+          <input type="email" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="שם">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">אימייל</label>
+          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="אימייל">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">סיסמה</label>
+          <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="סיסמה">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">שכר לשעה</label>
+          <input type="number" class="form-control" name="sallary" id="exampleInputPassword1" placeholder="שכר לשעה">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">הירשם</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <%- include('../includes/end.ejs') %>
