@@ -54,7 +54,7 @@
     "puppeteer": "^1.13.0",
     "pusher": "^2.2.0",
     "request": "^2.88.0",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "stripe": "^6.24.0",
     "uuid": "^3.3.2",
     "validator": "^10.11.0"
